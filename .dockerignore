@@ -1,0 +1,35 @@
+# Ignore development files
+.git
+.gitignore
+.env*
+
+# Ignore build artifacts
+bin/
+*.log
+.DS_Store
+Thumbs.db
+
+# Ignore test files
+*_test.go
+testdata/
+
+# Ignore documentation
+docs/
+*.md
+!README.md
+
+# Ignore scripts (not needed in container)
+scripts/
+
+# Ignore local development files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Ignore dependency cache
+vendor/
+
+# Ignore temporary files
+tmp/
+temp/

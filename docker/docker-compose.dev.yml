@@ -1,0 +1,37 @@
+services:
+  server:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.server
+      target: builder
+    volumes:
+      - .:/app
+      - /app/bin
+    command: ["go", "run", "cmd/server/main.go"]
+    environment:
+      - CGO_ENABLED=0
+      - FLEET_LOG_LEVEL=debug
+
+  publisher:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.publisher
+      target: builder
+    volumes:
+      - .:/app
+      - /app/bin
+    command: ["go", "run", "cmd/publisher/main.go"]
+    environment:
+      - FLEET_LOG_LEVEL=debug
+
+  worker:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.worker
+      target: builder
+    volumes:
+      - .:/app
+      - /app/bin
+    command: ["go", "run", "cmd/worker/main.go"]
+    environment:
+      - FLEET_LOG_LEVEL=debug
