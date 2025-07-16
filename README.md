@@ -13,7 +13,7 @@ Backend system untuk manajemen armada TransJakarta dengan fitur real-time tracki
 
 ## Prerequisites
 
-Sebelum menjalankan `docker compose up`, pastikan sudah terinstall:
+Sebelum menjalankan `docker compose up --build`,pastikan sudah terinstall:
 
 - **Docker** (version 20.0+)
 - **Docker Compose** (version 2.0+)
