@@ -140,7 +140,7 @@ make docker-test
 ./scripts/test_phase3.sh
 
 # Postman collection
-Import: postman/transjakarta-fleet.postman_collection.json
+Import: transjakarta-fleet.postman_collection.json
 ```
 
 ## Troubleshooting

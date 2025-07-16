@@ -15,7 +15,7 @@ This Postman collection provides complete API testing coverage for the fleet man
 
 - Postman Desktop App or Web Version
 - TransJakarta Fleet Management System running locally
-- Docker services started (`docker compose up -d`)
+- Docker services started (`docker compose up -d --build`)
 
 ## Import Instructions
 
